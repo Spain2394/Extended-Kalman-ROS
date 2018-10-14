@@ -4,7 +4,7 @@ import numpy as np
 from geometry_msgs.msg import Pose
 from std_msgs.msg import String
 from gazebo_msgs.msg import ModelStates
-from midterm.msg import Obs
+from kuka_kickass_kalman.msg import Obs
 
 def callback (msg):
 	global sensor_pub
