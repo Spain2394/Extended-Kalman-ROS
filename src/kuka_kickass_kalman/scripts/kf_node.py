@@ -30,11 +30,11 @@ def callback(vel_msg):
         zTrue  = [zTruei,zTruej] #true position
 
         #estimate the postition
-        xEsti,xEstj = kf.move_forward(u,uTrue,z,zTrue,generate_input_noise = True,generate_measurement_noise = False)
+        xEsti, xEstj = kf.move_forward(u,uTrue,z,zTrue,generate_input_noise = True,generate_measurement_noise = False)
 
         #caculate error 
-        xErri  = zTruei-xEsti
-        xErrj  = zTruej-xEstj
+        xErri = zTruei-xEsti
+        xErrj = zTruej-xEstj
 
         #create and send position estimate messege
         global xEst_msg
@@ -51,13 +51,13 @@ def callback(vel_msg):
         #create and send error messege
         global xErr_msg
         xErr_msg    = Pose()
-        xEst_msg.position.x    = xErri
-        xEst_msg.position.y    = xErrj
-        xEst_msg.position.z    = 0
-        xEst_msg.orientation.x = 0
-        xEst_msg.orientation.y = 0
-        xEst_msg.orientation.z = 0
-        xEst_msg.orientation.w = 0
+        xErr_msg.position.x    = xErri
+        xErr_msg.position.y    = xErrj
+        xErr_msg.position.z    = 0
+        xErr_msg.orientation.x = 0
+        xErr_msg.orientation.y = 0
+        xErr_msg.orientation.z = 0
+        xErr_msg.orientation.w = 0
         xErr_pub.publish(xErr_msg)
         
         #uncomment for testing
