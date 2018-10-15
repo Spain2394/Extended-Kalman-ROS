@@ -27,30 +27,30 @@ show_animation = True
 def check_input(u, uTrue, z, zTrue):
     #check u  
     if type(u)==list:
-        u=np.array(u).T
+        u=np.matrix(u).T
     elif len(z.shape)==1: 
-        u=np.array(u.tolist()).T
+        u=np.matrix(u.tolist()).T
     elif len(z.shape)==2 and u.shape[0] == 1 and u.shape[1] == 2:
             u = u.T
     #check uTrue       
     if type(uTrue)==list:
-        uTrue=np.array(uTrue).T
+        uTrue=np.matrix(uTrue).T
     elif len(z.shape)==1: 
-        uTrue=np.array(uTrue.tolist()).T
+        uTrue=np.matrix(uTrue.tolist()).T
     elif len(z.shape)==2 and uTrue.shape[0] == 1 and uTrue.shape[1] == 2:
             uTrue = uTrue.T
     #check z
     if type(z)==list:
-        z=np.array(z)
+        z=np.matrix(z)
     elif len(z.shape)==1: 
-        z=np.array(z.tolist())
+        z=np.matrix(z.tolist())
     elif len(z.shape)==2 and z.shape[0] == 2 and z.shape[1] == 1:
             z = z.T
     #check zTrue
     if type(zTrue)==list:
-        zTrue=np.array(zTrue)
+        zTrue=np.matrix(zTrue)
     elif len(zTrue.shape)==1: 
-        zTrue=np.array(zTrue.tolist())
+        zTrue=np.matrix(zTrue.tolist())
     elif len(zTrue.shape)==2 and zTrue.shape[0] == 2 and zTrue.shape[1] == 1:
             zTrue = zTrue.T
     #return
