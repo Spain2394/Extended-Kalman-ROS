@@ -66,8 +66,10 @@ def kf_node():
     kf = kalman_filter()
     rospy.init_node('kf_node', anonymous=True)
     
+    global xEst_pub
+    global xErr_pub
     xEst_pub = rospy.Publisher('geometry_msgs/Pos/xEst', Pose, queue_size=10)
-    Err_pub = rospy.Publisher('geometry_msgs/Pos/error', Pose, queue_size=10)
+    xErr_pub = rospy.Publisher('geometry_msgs/Pos/error', Pose, queue_size=10)
     
     rospy.Subscriber('/cmd_vel', Twist, callback=callback)
     rospy.spin()
