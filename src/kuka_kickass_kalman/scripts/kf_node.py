@@ -3,8 +3,10 @@ import rospy
 import time
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
-import ros_kalman_filter2
+from geometry_msgs.msg import Pose
+from ros_kalman_filter2 import kalman_filter
 from kuka_kickass_kalman.msg import Obs
+
 
 def callback(vel_msg):
     #once velocity is recieved, wait for next sensor reading
@@ -57,7 +59,10 @@ def callback(vel_msg):
         xEst_msg.orientation.z = 0
         xEst_msg.orientation.w = 0
         xErr_pub.publish(xErr_msg)
-
+        
+        #uncomment for testing
+        #kf.graph()
+        
         #log info
         rospy.loginfo("\nxEst"+str(xEst_msg)+"\neErr:"+str(xErr_msg))
 
