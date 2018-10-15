@@ -3,7 +3,7 @@ import rospy
 import time
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
-import ros_kalman_filter2
+from ros_kalman_filter2 import kalman_filter
 from kuka_kickass_kalman.msg import Obs
 
 def callback(vel_msg):
