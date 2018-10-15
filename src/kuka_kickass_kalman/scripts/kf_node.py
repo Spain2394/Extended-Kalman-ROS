@@ -31,7 +31,7 @@ def callback(vel_msg):
         xEsti,xEstj = kf.move_forward(u,uTrue,z,zTrue,generate_input_noise = True,generate_measurement_noise = False)
 
         #caculate error 
-        xErri, = zTruei-xEsti
+        xErri  = zTruei-xEsti
         xErrj  = zTruej-xEstj
 
         #create and send position estimate messege
