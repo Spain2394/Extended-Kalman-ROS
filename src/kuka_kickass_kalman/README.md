@@ -14,6 +14,8 @@ This will generate an empty world with the YouBot robot initialized to position 
 #Sensor Model
 Assumes position variables x and y are independent of each other, and that their covariance is 0 between them. Applies Gaussian noise to the ground truth position. Assumes a standard deviation of 0.2 for the Gaussian noise for both x and y.
 
+# 
+
 ## To run youbot and Teleop (Move_You)
 1) run "$ catkin_make install" inside of the catkin_ws workspace
 2) run "$ source ~/MidtermAssign/Extended-Kalman-ROS/devel/setup.bash" from anywhere
@@ -22,16 +24,19 @@ Assumes position variables x and y are independent of each other, and that their
 4.5) wait for Rviz and STAGE to open and run
 5) in another terminal run "$rosrun kuka_kickass_kalman Move_You.py"
 5.5) You can now type commands, either N, S, E, or W to move the youbot 1 meter in the prescribed direction
-6) 
+
+## To start project nodes: Move_You.py, and kf_node.py, and sensor_model.py, and ros_kalman_filter.py
+Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
+
+
 
 ## Contributions
 **Allen Spain**
 Construct this README 
 Group project in github
-Constructed function outline
-Create defunct local script
+and constructed function outline
+Also create defunct localization script
 had issues syncing inputs to function calls
-
 
 **Benjamin Ware** 
 Publication node
@@ -50,7 +55,6 @@ Program testing
 Screen captures
 
 **Shan Qamruddin** 
-
 
 ## References
 * Extended Kalman Localization reference: [github.com/AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics/tree/master/Localization/extended_kalman_filter)
