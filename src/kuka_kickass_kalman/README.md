@@ -28,9 +28,10 @@ Assumes position variables x and y are independent of each other, and that their
 **Allen Spain**
 Construct this README 
 Group project in github
-Function outline with Ben 
-Constructed ```function outline ```
+Constructed function outline
 Create defunct local script
+had issues syncing inputs to function calls
+
 
 **Benjamin Ware** 
 Publication node
