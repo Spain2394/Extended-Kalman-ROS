@@ -25,14 +25,14 @@ Assumes position variables x and y are independent of each other, and that their
 6) 
 
 ## Contributions
-** Allen Spain **
+**Allen Spain**
 Construct this README 
 Group project in github
 Function outline with Ben 
 Constructed ```function outline ```
 Create defunct local script
 
-**Benjamin Ware ** 
+**Benjamin Ware** 
 Publication node
 Project sync
 Kalman  subscription node
