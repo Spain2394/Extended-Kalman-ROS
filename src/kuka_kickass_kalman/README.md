@@ -21,7 +21,7 @@ Publishes the bot position given command velocity and sensor data. Also used to 
 Assumes position variables x and y are independent of each other, and that their covariance is 0 between them. Applies Gaussian noise to the ground truth position. Assumes a standard deviation of 0.2 for the Gaussian noise for both x and y.
 
 ### Teleop Driver
-Receives inputs from keyboard and converts them into command velocities which drive the bot at 1m/s forward(N), backward(S), left(E) and right(W). 
+Receives inputs from keyboard and converts them into command velocities which drive the bot at 1m/s forwards (N), backwards (S), left(E) and right(W). 
 
 ## To run youbot and teleop (Move_You)
 1) run ```$ catkin_make install``` inside of the ```catkin_ws``` workspace
