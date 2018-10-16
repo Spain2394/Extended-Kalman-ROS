@@ -11,10 +11,6 @@ After running catkin_make in workspace, you can launch using the command:
 roslaunch kuka_kickass_kalman youbot_kalman.launch 
 This will generate an empty world with the YouBot robot initialized to position (0,0,0). It also starts the sensor_model node, kf_node, and the Move_You node. These are the nodes for the sensor model, Kalman filter localization, and teleoperation drivers
 
-## To start project nodes: Move_You, kf_node, and sensor_model
-Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
-
-
 -----------------------------------
 ### Robot Driver
 Provided by youbot_driver
@@ -28,7 +24,6 @@ Assumes position variables x and y are independent of each other, and that their
 ### Teleop Driver
 Receives inputs from keyboard and converts them into command velocities which drive the bot at 1m/s forward(N), backward(S), left(W) and right(E). 
 
-
 ## To run youbot and Teleop (Move_You)
 1) run ```$ catkin_make install``` inside of the ```catkin_ws workspace```
 2) run ```$ source ~/MidtermAssign/Extended-Kalman-ROS/devel/setup.bash``` from anywhere
@@ -38,6 +33,8 @@ Receives inputs from keyboard and converts them into command velocities which dr
 6) In another terminal run ```$rosrun kuka_kickass_kalman Move_You.py``` 
 7) You can now type commands, either N, S, E, or W to move the youbot 1 meter in the prescribed direction
 
+## To start all project nodes: Move_You, kf_node, and sensor_model
+Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 
 ## Contributions
 **Allen Spain**
