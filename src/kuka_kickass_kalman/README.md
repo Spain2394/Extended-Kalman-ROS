@@ -33,9 +33,9 @@ receives inputs from keyboard and converts them into command velocities which dr
 1) run ```$ catkin_make install``` inside of the ```catkin_ws workspace```
 2) run ```$ source ~/MidtermAssign/Extended-Kalman-ROS/devel/setup.bash``` from anywhere
 3) run ```$ roscore```
-4) in a new terminal run: ```$ roslaunch youbot_gazebo_robot youbot_base_only.launch```
+4) in a new terminal run: ```$ roslaunch youbot_gazebo_robot youbot_base_only.launch```\newline
 4.5) Wait for Gazebo to build world and stage bot
-5) In another terminal run ```$rosrun kuka_kickass_kalman Move_You.py```
+5) In another terminal run ```$rosrun kuka_kickass_kalman Move_You.py```\newline
 5.5) You can now type commands, either N, S, E, or W to move the youbot 1 meter in the prescribed direction
 
 
