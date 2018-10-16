@@ -11,7 +11,7 @@ After running catkin_make in workspace, you can launch using the command:
 roslaunch kuka_kickass_kalman youbot_kalman.launch 
 This will generate an empty world with the YouBot robot initialized to position (0,0,0). It also starts the sensor_model node, kf_node, and the Move_You node. These are the nodes for the sensor model, Kalman filter localization, and teleoperation drivers
 
-## To start project nodes: Move_You.py, kf_node.py, and sensor_model.py
+## To start project nodes: Move_You, kf_node, and sensor_model
 Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 
 
