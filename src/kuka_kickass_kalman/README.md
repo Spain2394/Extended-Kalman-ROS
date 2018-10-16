@@ -30,7 +30,7 @@ Receives inputs from keyboard and converts them into command velocities which dr
 3) run ```$ roscore```
 4) in a new terminal run: ```$ roslaunch youbot_gazebo_robot youbot_base_only.launch``` 
 5) Wait for Gazebo to build world and stage bot
-6) In another terminal run ```$rosrun kuka_kickass_kalman Move_You.py``` 
+6) In another terminal run ```$ rosrun kuka_kickass_kalman Move_You.py``` 
 7) You can now type commands, either N, S, E, or W to move the youbot 1 meter in the prescribed direction
 
 ## To start all project nodes: Move_You, kf_node, and sensor_model
