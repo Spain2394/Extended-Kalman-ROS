@@ -17,7 +17,7 @@ Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 
 -----------------------------------
 ### Robot Driver
-provided by youbot_driver
+Provided by youbot_driver
 
 ### Localization
 Publishes the bot position given command velocity and sensor data. Also used to publish the error between localization position and the bot's true position.  
@@ -26,7 +26,7 @@ Publishes the bot position given command velocity and sensor data. Also used to 
 Assumes position variables x and y are independent of each other, and that their covariance is 0 between them. Applies Gaussian noise to the ground truth position. Assumes a standard deviation of 0.2 for the Gaussian noise for both x and y.
 
 ### Teleop Driver
-receives inputs from keyboard and converts them into command velocities which drive the bot at 1m/s forward(N), backward(S), left(W) and right(E). 
+Receives inputs from keyboard and converts them into command velocities which drive the bot at 1m/s forward(N), backward(S), left(W) and right(E). 
 
 
 ## To run youbot and Teleop (Move_You)
