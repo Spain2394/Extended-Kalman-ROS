@@ -20,7 +20,7 @@ Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 provided by youbot_driver
 
 ### Localization
-Publishes the bot position given command velocity and sensor data along. Also used to publish the error between localization position and the bot's true position.  
+Publishes the bot position given command velocity and sensor data. Also used to publish the error between localization position and the bot's true position.  
 
 ### Sensor Driver
 Assumes position variables x and y are independent of each other, and that their covariance is 0 between them. Applies Gaussian noise to the ground truth position. Assumes a standard deviation of 0.2 for the Gaussian noise for both x and y.
