@@ -21,13 +21,13 @@ def Move_You():
 
     while True:
         input = raw_input("Please enter your command as either N, S, E, W, or P to stop the robot. Any other key will exit the program.\n")
-        if input == "E":
+        if input == "N":
             msg.linear.x = 1
-        elif input == "W":
-            msg.linear.x = -1
-        elif input == "N":
-            msg.linear.y = 1
         elif input == "S":
+            msg.linear.x = -1
+        elif input == "E":
+            msg.linear.y = 1
+        elif input == "W":
             msg.linear.y = -1
         elif input == "P":
             msg.linear.x = 0
