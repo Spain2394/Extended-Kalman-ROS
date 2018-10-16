@@ -45,8 +45,8 @@ To observe error in odom run ```rostopic echo geometry_msgs/Pos/error```
 Construct this README 
 Constructed group project in github
 Constructed function outline
-Also created defunct localization script
-had some issues syncing inputs to function calls
+Created defunct localization script
+Odometry topic testing and screen captures
 
 **Benjamin Ware** 
 Publication node
