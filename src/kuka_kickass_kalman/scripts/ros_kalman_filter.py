@@ -226,6 +226,7 @@ class kalman_filter:
         self.estimate(u,z)
         self.xTrue = motion_model(self.xTrue, uTrue)
         self.store_history(u,z)
+        self.graph_hist(self.hz,self.hxTrue,self.hxDR,self.hxEst,self.xEst,self.PEst)
         return (self.xEst.item(0), self.xEst.item(1))
     
     def simulate_inputs(self):
