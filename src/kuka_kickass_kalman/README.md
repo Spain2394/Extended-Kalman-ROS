@@ -39,6 +39,16 @@ run ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 To observe localization odom run ```rostopic echo geometry_msgs/Pos/xEst```  
 To observe error in odom run ```rostopic echo geometry_msgs/Pos/error```
 
+## Plots
+to plot odometry uncomment ```#kf.graph()``` in ```kf_node.py```
+
+The blue line is true trajectory, the black line is dead reckoning trajectory,
+
+the green point is positioning observation
+
+The red circle is estimated covariance in EKF
+
+
 ## Contributions
 **Allen Spain**
 Construct this README. 
