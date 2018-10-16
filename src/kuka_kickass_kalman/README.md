@@ -42,27 +42,27 @@ To observe error in odom run ```rostopic echo geometry_msgs/Pos/error```
 
 ## Contributions
 **Allen Spain**
-Construct this README 
-Constructed group project in github
-Constructed function outline
-Created defunct localization script
-Odometry topic testing and screen captures
+Construct this README. 
+Constructed group project in github. 
+Constructed function outline. 
+Created defunct localization script. 
+Odometry topic testing and screen captures. 
 
 **Benjamin Ware** 
-Publication node
-Project sync
-Kalman subscription node
-Localization node
+Publication node. 
+Project sync. 
+Kalman subscription node. 
+Localization node. 
 
 **Joshua Shannon** 
-Sensor node with custom msg
-Launch file construction
-Testing/debugging
+Sensor node with custom msg. 
+Launch file construction. 
+Testing/debugging. 
 
 **Stephen Whitcomb** 
-User input/ Telop node
-Program testing
-Screen captures
+User input/ Telop node. 
+Program testing. 
+Screen captures. 
 
 **Shan Qamruddin** 
 
