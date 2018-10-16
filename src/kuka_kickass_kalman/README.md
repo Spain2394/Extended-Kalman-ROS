@@ -34,7 +34,11 @@ Receives inputs from keyboard and converts them into command velocities which dr
 7) You can now type commands, either N, S, E, or W to move the youbot 1 meter in the prescribed direction
 
 ## To start all project nodes: Move_You, kf_node, and sensor_model
-Run: ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
+run ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
+
+## Custom Messages
+To observe localization odom run ```rostopic echo geometry_msgs/Pos/xEst```  
+To observe error in odom run ```rostopic echo geometry_msgs/Pos/error```
 
 ## Contributions
 **Allen Spain**
