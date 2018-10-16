@@ -7,9 +7,8 @@ Localize omnidirectional robot in Gazebo
 # Starting project from launch file
 Assumes youbot came from http://github.com/youbot/youbot_simulation.git and http://github.com/youbot/youbot_description.git. 
 Make sure these projects are sourced so ROS can find them.
-After running catkin_make in workspace, you can launch using the command:
-roslaunch kuka_kickass_kalman youbot_kalman.launch 
-This will generate an empty world with the YouBot robot initialized to position (0,0,0). It also starts the sensor_model node, kf_node, and the Move_You node. These are the nodes for the sensor model, Kalman filter localization, and teleoperation drivers
+After running catkin_make in workspace, you can use launch file 
+to generate an empty world with the YouBot robot initialized to position (0,0,0). It also starts the sensor_model node, kf_node, and the Move_You node. These are the nodes for the sensor model, Kalman filter localization, and teleoperation drivers
 
 -----------------------------------
 ### Robot Driver
