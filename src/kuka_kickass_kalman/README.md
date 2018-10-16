@@ -54,8 +54,9 @@ The red circle is estimated covariance in EKF
 Construct this README. 
 Constructed group project in github. 
 Constructed function outline. 
-Created defunct localization script. 
-Odometry topic testing and screen captures. 
+Created localization script. 
+Odometry topic testing and screen captures.
+Data plots
 
 **Benjamin Ware** 
 Publication node. 
