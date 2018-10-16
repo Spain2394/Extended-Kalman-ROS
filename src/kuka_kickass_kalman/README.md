@@ -17,12 +17,12 @@ Assumes position variables x and y are independent of each other, and that their
 # 
 
 ## To run youbot and Teleop (Move_You)
-1) run "$ catkin_make install" inside of the catkin_ws workspace
-2) run "$ source ~/MidtermAssign/Extended-Kalman-ROS/devel/setup.bash" from anywhere
-3) run "$ roscore"
-4) in a new terminal run "$ roslaunch youbot_gazebo_robot youbot_base_only.launch”
+1) run ```$ catkin_make install" inside of the catkin_ws workspace```
+2) run ```$ source ~/MidtermAssign/Extended-Kalman-ROS/devel/setup.bash" from anywhere```
+3) run ```$ roscore```
+4) in a new terminal run ```$ roslaunch youbot_gazebo_robot youbot_base_only.launch```
 4.5) wait for Rviz and STAGE to open and run
-5) in another terminal run "$rosrun kuka_kickass_kalman Move_You.py"
+5) in another terminal run ```$rosrun kuka_kickass_kalman Move_You.py```
 5.5) You can now type commands, either N, S, E, or W to move the youbot 1 meter in the prescribed direction
 
 ## To start project nodes: Move_You.py, and kf_node.py, and sensor_model.py, and ros_kalman_filter.py
