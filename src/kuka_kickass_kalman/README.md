@@ -2,7 +2,7 @@
 [Install](http://www.youbot-store.com/wiki/index.php/Gazebo_simulation) KUKA model robot, and robot drivers. 
 
 # Extended-Kalman-ROS
-Simulate omnidirectional robot in Gazebo 
+Localize omnidirectional robot in Gazebo 
 
 # Starting project from launch file
 Assumes youbot came from http://github.com/youbot/youbot_simulation.git and http://github.com/youbot/youbot_description.git. 
