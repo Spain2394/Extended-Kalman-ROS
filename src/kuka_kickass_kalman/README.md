@@ -24,9 +24,9 @@ Assumes position variables x and y are independent of each other, and that their
 ### Teleop Driver
 Receives inputs from keyboard and converts them into command velocities which drive the bot at 1m/s forward(N), backward(S), left(W) and right(E). 
 
-## To run youbot and Teleop (Move_You)
+## To run youbot and teleop (Move_You)
 1) run ```$ catkin_make install``` inside of the ```catkin_ws workspace```
-2) run ```$ source ~/MidtermAssign/Extended-Kalman-ROS/devel/setup.bash``` from anywhere
+2) Inside your ```catkin_ws``` run ```$ source devel/setup.bash```
 3) run ```$ roscore```
 4) in a new terminal run: ```$ roslaunch youbot_gazebo_robot youbot_base_only.launch``` 
 5) Wait for Gazebo to build world and stage bot
