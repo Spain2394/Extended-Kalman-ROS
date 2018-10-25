@@ -3,6 +3,6 @@ prefix=/home/parallels/Extended-Kalman-ROS/install
 Name: kuka_kickass_kalman
 Description: Description of kuka_kickass_kalman
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/parallels/Extended-Kalman-ROS/install/include
 Libs: -L/home/parallels/Extended-Kalman-ROS/install/lib 
-Requires: 
+Requires: gazebo_msgs geometry_msgs rospy std_msgs message_runtime

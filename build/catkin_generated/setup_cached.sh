@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/home/parallels/Extended-Kalman-ROS/build"
+export PYTHONPATH="/home/parallels/rocon/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages"
