@@ -15,13 +15,15 @@ to generate an empty world with the YouBot robot initialized to position (0,0,0)
 Provided by youbot_driver
 
 ### Localization
-Publishes the bot position given command velocity and sensor data. Also used to publish the error between localization position and the bot's true position.  
+Publishes the bot position given command velocity and sensor data. Also used to publish the error between localization position and the bot's true position.
 
 ### Sensor Driver
 Assumes position variables x and y are independent of each other, and that their covariance is 0 between them. Applies Gaussian noise to the ground truth position. Assumes a standard deviation of 0.2 for the Gaussian noise for both x and y.
 
 ### Teleop Driver
 Receives inputs from keyboard and converts them into command velocities which drive the bot at 1 m/s forwards (N), backwards (S), left(E) and right(W). 
+
+![My first 'JIF'](~/Extended-Kalman-ROS/src/kuka_kickass_kalman/simulated.gif)
 
 ## To run youbot and teleop (Move_You)
 1) run ```$ catkin_make install``` inside of the ```catkin_ws``` workspace
@@ -36,11 +38,11 @@ Receives inputs from keyboard and converts them into command velocities which dr
 run ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 
 ## Custom Messages
-To observe localization odom run ```rostopic echo geometry_msgs/Pos/xEst```  
-To observe error in odom run ```rostopic echo geometry_msgs/Pos/error```
+To observe localization odom run ```rostopic echo geometry_msgs/Pos/xEst```
+To observe error in odom run ```rostopic echo geometry_msgs/Pos/error
 
 ## Plots
-to plot odometry uncomment ```#kf.graph()``` in ```kf_node.py```
+to plot odometry uncomment ```kf.graph()``` in ```kf_node.py```
 
 The blue line is true trajectory, the black line is dead reckoning trajectory,
 
