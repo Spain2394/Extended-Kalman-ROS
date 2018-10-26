@@ -23,9 +23,7 @@ Assumes position variables x and y are independent of each other, and that their
 ### Teleop Driver
 Receives inputs from keyboard and converts them into command velocities which drive the bot at 1 m/s forwards (N), backwards (S), left(E) and right(W). 
 
-[Imgur](https://i.imgur.com/bFFOekE.gifv)
-<blockquote class="imgur-embed-pub" lang="en" data-id="bFFOekE"><a href="//imgur.com/bFFOekE">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
+![1](https://github.com/Spain2394/Extended-Kalman-ROS/blob/master/src/kuka_kickass_kalman/ScreenCaps/simulation.gif)
 
 ## To run youbot and teleop (Move_You)
 1) run ```$ catkin_make install``` inside of the ```catkin_ws``` workspace
