@@ -39,7 +39,7 @@ run ```$ roslaunch kuka_kickass_kalman youbot_kalman.launch```
 
 ## Custom Messages
 To observe localization odom run ```rostopic echo geometry_msgs/Pos/xEst```
-To observe error in odom run ```rostopic echo geometry_msgs/Pos/error
+To observe error in odom run ```rostopic echo geometry_msgs/Pos/error```
 
 ## Plots
 to plot odometry uncomment ```kf.graph()``` in ```kf_node.py```
